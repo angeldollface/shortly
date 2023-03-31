@@ -1,0 +1,28 @@
+<!--
+SHORTLY by Alexander Abraham, a.k.a. "Angel Dollface".
+Licensed under the MIT license.
+-->
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>{{ name }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://angeldollface.art/assets/css/dollfonts.css">
+  <link rel="stylesheet" href="{% static 'styles.css' %}"/>
+ </head>
+ <body>
+  <h1>SHORTLY</h1>
+  <div class="content">
+   <h2 class="linkTitle">{{ name }}</h2>
+   <p class="date">Published: {{ date }}</p>
+   <p class="link">
+    Your URL: <a class="link" href="{{ url }}">{{ url }}</a>
+   </p>
+   <p class="siteLink">
+    Your shortened URL: <a class="link" href="{{ url }}">https://{{ root_url }}/{{ pk }}/run</a>
+   </p>
+  </div>
+ </body>
+</html>
