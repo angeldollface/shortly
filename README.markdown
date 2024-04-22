@@ -58,28 +58,34 @@ python -m pip install -r requirements.txt
 - 7.) Setup the database migrations:
 
 ```bash
-python manage.py --run-syncdb
+python manage.py migrate
 ```
 
-- 8.) Setup a superuser account:
+- 8.) Run the migrations for the `links` app:
 
 ```bash
-python manage.py createsuperuser
+python manage.py makemigrations links
 ```
 
-- 9.) Run the local development server:
+- 9.) Rerun the migrations:
+
+```bash
+python manage.py migrate
+```
+
+- 10.) Run the local development server:
 
 ```bash
 python manage.py runserver
 ```
 
-- 10.) Type in a URL in the top field.
+- 11.) Type in a URL in the top field.
 
-- 11.) Name your URL in the bottom field.
+- 12.) Name your URL in the bottom field.
 
-- 12.) You will be redirected to a URL overview page. This page will display some information. The first thing will be the name, when you submitted your URL, then the URL you submitted, and finally, your shortened URL.
+- 13.) You will be redirected to a URL overview page. This page will display some information. The first thing will be the name, when you submitted your URL, then the URL you submitted, and finally, your shortened URL.
 
-- 13.) Enjoy. :heart:
+- 14.) Enjoy. :heart:
 
 
 ## CHANGELOG :black_nib:
